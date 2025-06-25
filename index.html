@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agendamento Cautelar - Colorado</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Agendamento Cautelar - Colorado</h1>
     <form id="form-agendamento">
-      <label for="vendedor">Vendedor(a):</label>
-      <input type="text" id="vendedor" name="vendedor" required>
+      <label>Vendedor(a):</label>
+      <input type="text" name="vendedor" required />
 
-      <label for="loja">Loja:</label>
+      <label>Loja:</label>
       <select name="loja" id="loja" required>
         <option value="">Selecione</option>
         <option value="Fiat">Fiat</option>
@@ -23,19 +23,19 @@
         <option value="Outra">Outra Loja</option>
       </select>
 
-      <div id="outra-loja" style="display: none;">
-        <label for="outra_loja">Nome da outra loja:</label>
-        <input type="text" id="outra_loja" name="outra_loja">
+      <div id="outra-loja" style="display:none;">
+        <label>Nome da outra loja:</label>
+        <input type="text" name="outra_loja" />
       </div>
 
-      <label for="placa">Placa do veículo:</label>
-      <input type="text" id="placa" name="placa" required>
+      <label>Placa do veículo:</label>
+      <input type="text" name="placa" required />
 
-      <label for="data">Data:</label>
-      <input type="date" id="data" name="data" required>
+      <label>Data:</label>
+      <input type="date" name="data" required />
 
-      <label for="horario">Horário:</label>
-      <select id="horario" name="horario" required>
+      <label>Horário:</label>
+      <select name="horario" id="horario" required>
         <option value="">Selecione</option>
         <option>09:00</option>
         <option>10:00</option>
@@ -49,6 +49,11 @@
       <p id="mensagem-confirmacao" style="color:limegreen; display:none;">Agendamento realizado com sucesso!</p>
     </form>
   </div>
+
+  <!-- Firebase scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
