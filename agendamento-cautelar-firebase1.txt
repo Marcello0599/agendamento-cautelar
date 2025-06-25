@@ -1,0 +1,13 @@
+// TODO: Substitua com as chaves do seu Firebase (te mostrarei como)
+ const firebaseConfig = {
+    apiKey: "AIzaSyCl3SrmNSS72KyJqvBS2dmAGufVDJwJZS0",
+    authDomain: "agendamento-cautelar-colorado.firebaseapp.com",
+    databaseURL: "https://agendamento-cautelar-colorado-default-rtdb.firebaseio.com",
+    projectId: "agendamento-cautelar-colorado",
+    storageBucket: "agendamento-cautelar-colorado.firebasestorage.app",
+    messagingSenderId: "1043852099797",
+    appId: "1:1043852099797:web:7f0f5d83562bdeee6f625c",
+    measurementId: "G-Z5DR721MVQ"
+  };
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
