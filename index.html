@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento Cautelar - Colorado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento Cautelar - Colorado</h1>
+    <form id="form-agendamento">
+      <label>Vendedor(a):</label>
+      <input type="text" name="vendedor" required />
+
+      <label>Loja:</label>
+      <select name="loja" id="loja" required>
+        <option value="">Selecione</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Seminovos">Seminovos</option>
+        <option value="Outra">Outra Loja</option>
+      </select>
+
+      <div id="outra-loja" style="display: none;">
+        <label>Nome da outra loja:</label>
+        <input type="text" name="outra_loja" />
+      </div>
+
+      <label>Placa do veículo:</label>
+      <input type="text" name="placa" required />
+
+      <label>Data:</label>
+      <input type="date" name="data" required />
+
+      <label>Horário:</label>
+      <select name="horario" required>
+        <option value="">Selecione</option>
+        <option>09:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+      </select>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
